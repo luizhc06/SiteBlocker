@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="EN">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Blocker</title>
+</head>
+<body>
+    <h1>Site Blocker</h1>
+    <p>Websites are blocked for 60 days.</p>
+    <form id="blockSiteForm">
+        <label for="siteUrl">Site URL:</label>
+        <input type="text" id="siteUrl" name="siteUrl" required>
+        <button type="submit">Block</button>
+    </form>
+    <div class="confirmation" id="confirmation" style="display: none;">
+        <p>Are you sure you want to block this site?</p>
+        <button id="confirmYes">Yes</button>
+        <button id="confirmNo">No</button>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>
